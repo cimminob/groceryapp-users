@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.*;
 public class UsersController {
 
 
-    @PostMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE },
+
+    @PostMapping(
+            produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE },
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     @ResponseBody
     ResponseEntity<NewUserResponseModel> createNewUser(@RequestBody
